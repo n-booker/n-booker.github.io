@@ -1,5 +1,5 @@
 body {
-  background-color: white;
+  background-color: whitesmoke;
   color: black;
   font-family: Arial, sans-serif;
 }
@@ -24,9 +24,16 @@ body {
   color: white;
 }
 
-.center {
+.centersmol {
   display: block;
   margin-left: auto;
   margin-right: auto;
   width: 50%;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
 }
