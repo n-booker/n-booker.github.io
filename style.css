@@ -7,11 +7,12 @@ body {
 #main {
   width: 840px;
   max-width: 100%;
-  padding: 0;
-  margin: 0 auto;
 }
 
 #header {
-  width: 100%;
+  background-color: orangered;
+  height: 100px;
+  width: 840px;
+  max-width: 100%;
   text-align: center;
 }

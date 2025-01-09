@@ -5,7 +5,7 @@ class Header extends HTMLElement {
 
   connectedCallback() {
     this.innerHTML = `
-      <div id="main" style="text-align: center;">
+      <div id="header">
         <a href="pdffiles/Metrics and Cosmos and Trilobites.pdf" target="_blank">GR & Cosmology</a> - 
         <a href="pdffiles/Particles & Wizards.pdf" target="_blank">QFT (in progress)</a> - 
         <a href="pdffiles/Electron's Destiny.pdf" target="_blank">Advanced QM</a> - 
