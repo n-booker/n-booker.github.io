@@ -5,7 +5,7 @@ class Header extends HTMLElement {
 
   connectedCallback() {
     this.innerHTML = `
-      <div id="header">
+      <div id="main">
         <a href="pdffiles/Metrics and Cosmos and Trilobites.pdf">GR & Cosmology</a> - 
         <a href="pdffiles/Particles & Wizards.pdf">QFT (in progress)</a> - 
         <a href="pdffiles/Electron's Destiny.pdf">Advanced QM</a> - 
