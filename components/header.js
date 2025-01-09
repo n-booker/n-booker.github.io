@@ -10,7 +10,7 @@ class Header extends HTMLElement {
         <b>
         <a href="index.html" class="special-link">Home</a> - 
         <a href="notes.html" class="special-link">Lecture Notes</a> - 
-        <a href="3D.html" class="special-link">3D Modelling</a>
+        <a href="3D.html" class="special-link">3D Renders</a>
         <b>
         <hr>
       </div>
