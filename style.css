@@ -5,19 +5,19 @@ body {
 }
 
 #main {
-  max-width: 1200px;
+  max-width: 1000px;
   margin: 0 auto;
 }
 
 #header {
   background-color: orangered;
-  max-width: 1200px;
+  max-width: 1000px;
   margin: 0 auto;
   text-align: center;
 }
 
 #footer {
-  max-width: 1200px;
+  max-width: 1000px;
   margin: 0 auto;
   text-align: center;
 }
