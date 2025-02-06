@@ -5,7 +5,7 @@ class Footer extends HTMLElement {
 
   connectedCallback() {
     this.innerHTML = `
-      <div id="header">
+      <div id="footer">
         <hr>
         CC BY-NC-SA 4.0
       </div>
