@@ -7,6 +7,7 @@ class Footer extends HTMLElement {
     this.innerHTML = `
       <div id="header">
         <hr>
+        CC BY-NC-SA 4.0
       </div>
     `;
   }
