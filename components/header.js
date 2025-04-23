@@ -13,6 +13,7 @@ class Header extends HTMLElement {
         <a href="courses.html" class="special-link">List of Courses</a> - 
         <a href="latex.html" class="special-link">LaTeX</a> - 
         <a href="3D.html" class="special-link">3D Modelling</a>
+        <a href="ijcps.html" class="special-link">Journal Club</a>
         <b>
         <hr>
       </div>
