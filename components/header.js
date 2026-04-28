@@ -10,10 +10,9 @@ class Header extends HTMLElement {
         <b>
         <a href="index.html" class="special-link">Main Page</a> - 
         <a href="research.html" class="special-link">Research</a> - 
-        <a href="courses.html" class="special-link">List of Courses</a> - 
-        <a href="latex.html" class="special-link">LaTeX</a> - 
-        <a href="3D.html" class="special-link">3D Modelling</a> - 
         <a href="ijcps.html" class="special-link">Journal Club</a> - 
+        <a href="latex.html" class="special-link">LaTeX</a> - 
+        <a href="3D.html" class="special-link">3D</a> - 
         <a href="trilobites.html" class="special-link">Trilobites</a>
         <b>
         <hr>
