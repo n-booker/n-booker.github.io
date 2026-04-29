@@ -52,6 +52,7 @@ body {
 .special-link, .special-link:hover, .special-link:active, .special-link:visited {
   color: white;
   font-weight: bold;
+  font-variant: small-caps;
 }
 
 .centersmol {
@@ -66,4 +67,19 @@ body {
   margin-left: auto;
   margin-right: auto;
   width: 70%;
+}
+
+.texa {
+	font-size: 0.75em;
+	vertical-align: 0.25em;
+	margin-left: -0.36em;
+	margin-right: -0.15em;
+	line-height: 1ex;
+}
+
+.texe {
+	vertical-align: -0.25em;
+	margin-left: -0.1667em;
+	margin-right: -0.125em;
+	line-height: 1ex;
 }
