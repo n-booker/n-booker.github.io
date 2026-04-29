@@ -8,7 +8,7 @@ class Header extends HTMLElement {
       <div id="header" class="special-link">
         <hr>
         <b>
-        <a href="index.html" class="special-link">Main Page</a>  –  
+        <a href="index.html" class="special-link">Homepage</a>  –  
         <a href="research.html" class="special-link">Research</a>  –  
         <a href="ijcps.html" class="special-link">Journal Club</a>  –  
         <a href="latex.html" class="special-link">LaTeX</a>  –  
