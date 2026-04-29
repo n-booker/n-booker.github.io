@@ -18,6 +18,7 @@ class Header extends HTMLElement {
             <td><a href="latex.html" class="special-link">LaTeX</a></td>
             <td>::</td>
             <td><a href="3D.html" class="special-link">3D</a></td>
+            <td>::</td>
             <td><a href="trilobites.html" class="special-link">Trilobites</a></td>
           </tr>
         <b>
