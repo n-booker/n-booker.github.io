@@ -6,16 +6,22 @@ class Header extends HTMLElement {
   connectedCallback() {
     this.innerHTML = `
       <div id="header" class="special-link">
-        <hr>
+        <table>
         <b>
-        <a href="index.html" class="special-link">Homepage</a>  –  
-        <a href="research.html" class="special-link">Research</a>  –  
-        <a href="ijcps.html" class="special-link">Journal Club</a>  –  
-        <a href="latex.html" class="special-link">LaTeX</a>  –  
-        <a href="3D.html" class="special-link">3D</a>  –  
-        <a href="trilobites.html" class="special-link">Trilobites</a>
+          <tr>
+            <td><a href="index.html" class="special-link">Homepage</a></td>
+            <td>::</td>
+            <td><a href="research.html" class="special-link">Research</a></td>
+            <td>::</td>
+            <td><a href="ijcps.html" class="special-link">Journal Club</a></td>
+            <td>::</td>
+            <td><a href="latex.html" class="special-link">LaTeX</a></td>
+            <td>::</td>
+            <td><a href="3D.html" class="special-link">3D</a></td>
+            <td><a href="trilobites.html" class="special-link">Trilobites</a></td>
+          </tr>
         <b>
-        <hr>
+        </table>
       </div>
     `;
   }
