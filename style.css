@@ -8,7 +8,7 @@ body {
   backdrop-filter: blur(2px);
   max-width: 870px;
   margin: 0 auto;
-  padding: 15px;
+  padding: 0px 15px;
 }
 
 #header {
