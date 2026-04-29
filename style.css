@@ -1,5 +1,5 @@
 body {
-  background-color: snow;
+  background-image: url('components/leaves.jpg');
   color: black;
   font-family: Arial, sans-serif;
 }
@@ -10,7 +10,7 @@ body {
 }
 
 #header {
-  background-color: orangered;
+  background-color: maroon;
   max-width: 900px;
   margin: 0 auto;
   text-align: center;
