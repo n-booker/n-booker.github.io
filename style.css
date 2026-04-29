@@ -12,14 +12,14 @@
 @font-face {
   font-family: "Computer Modern";
   src: url('components/cmunsi.otf');
-  font-style: italic, oblique;
+  font-style: italic;
 }
 
 @font-face {
   font-family: "Computer Modern";
   src: url('components/cmunbxo.otf');
   font-weight: bold;
-  font-style: italic, oblique;
+  font-style: italic;
 }
 
 body {
