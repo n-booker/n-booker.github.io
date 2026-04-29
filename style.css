@@ -31,9 +31,9 @@ body {
 #main {
   background-color: rgba(255, 255, 255, 0.5);
   backdrop-filter: blur(2px);
-  max-width: 870px;
+  max-width: 850px;
   margin: 0 auto;
-  padding: 0px 15px;
+  padding: 0px 25px;
 }
 
 #header {
