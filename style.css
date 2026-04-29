@@ -52,7 +52,6 @@ body {
 .special-link, .special-link:hover, .special-link:active, .special-link:visited {
   color: white;
   font-weight: bold;
-  font-variant: small-caps;
 }
 
 .centersmol {
