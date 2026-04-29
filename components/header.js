@@ -6,7 +6,7 @@ class Header extends HTMLElement {
   connectedCallback() {
     this.innerHTML = `
       <div id="header" class="special-link">
-        <table>
+        <table style="width:100%">
         <b>
           <tr>
             <td><a href="index.html" class="special-link">Homepage</a></td>
