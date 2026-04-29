@@ -1,7 +1,6 @@
 body {
   background-image: url('images/texture.png');
   color: black;
-  font-family: Arial, sans-serif;
 }
 
 #main {
@@ -16,12 +15,14 @@ body {
   max-width: 900px;
   margin: 0 auto;
   text-align: center;
+  font-family: Arial, sans-serif;
 }
 
 #footer {
   max-width: 900px;
   margin: 0 auto;
   text-align: center;
+  font-family: Arial, sans-serif;
 }
 
 .special-link, .special-link:hover, .special-link:active, .special-link:visited {
