@@ -19,7 +19,7 @@ class Header extends HTMLElement {
             <td>::</td>
             <td><a href="3D.html" class="special-link">3D</a></td>
             <td>::</td>
-            <td><a href="trilobites.html" class="special-link">Trilobites</a></td>
+            <td><a href="misc.html" class="special-link">Miscellaneous</a></td>
           </tr>
         <b>
         </table>
