@@ -9,7 +9,7 @@ class HeaderDE extends HTMLElement {
         <table style="width:100%">
         <b>
           <tr>
-            <td><a href="index.html" class="special-link">Haputseite</a></td>
+            <td><a href="index.html" class="special-link">Hauptseite</a></td>
             <td>::</td>
             <td><a href="research.html" class="special-link">Forschung</a></td>
             <td>::</td>
