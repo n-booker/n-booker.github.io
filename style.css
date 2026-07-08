@@ -68,6 +68,10 @@ body {
   width: 70%;
 }
 
+.quote {
+  width: 60%;
+}
+
 .tex-a {
 	font-size: 0.75em;
 	vertical-align: 0.25em;
