@@ -69,7 +69,8 @@ body {
 }
 
 .quote {
-  width: 60%;
+  margin-left: auto;
+  width: 70%;
 }
 
 .tex-a {
