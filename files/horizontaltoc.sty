@@ -1,0 +1,116 @@
+%% horizontaltoc.sty - Horizontal Table of Contents
+%% Author: N. Booker
+%% CC BY-NC-SA 4.0
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{horizontaltoc}[2026/08/12 v1.0 Horizontal Table of Contents]
+
+\makeatletter
+
+% Package options
+\newif\ifhorizontaltoc@figures
+\newif\ifhorizontaltoc@sansserif
+\horizontaltoc@figuresfalse
+\horizontaltoc@sansseriffalse
+% Horizontal formatting for the List of Figures and List of Tables.
+\DeclareOption{figures}{\horizontaltoc@figurestrue}
+% Use Sans Serif for ToC headings (chapter or section, depending on the document class).
+\DeclareOption{sansserif}{\horizontaltoc@sansseriftrue}
+\DeclareOption*{\PackageWarning{horizontaltoc}{Unknown option `\CurrentOption'}}
+\ProcessOptions\relax
+
+% Applies for all classes.
+\newcommand{\@horizontaltocline}[5]{
+  \ifnum #1>\c@tocdepth \else
+    {\noindent
+     {\@tempdima #3\relax
+     {#4}
+     \, (#5)}
+     \quad}
+  \fi
+}
+
+% Code for the figures option.
+\ifhorizontaltoc@figures
+  \@ifundefined{l@figure}
+    {\renewcommand*\l@figure{\@horizontaltocline{1}{1.5em}{2.3em}}}
+  \@ifundefined{l@table}
+    {\renewcommand*\l@table{\@horizontaltocline{1}{1.5em}{2.3em}}}
+\fi
+
+% Use the chapter/part layout only when both sectioning commands exist.
+\@ifundefined{chapter}{
+  % Classes without chapters or parts (e.g. article).
+  \renewcommand*\l@subsection{\@horizontaltocline{2}{1.5em}{2.3em}}
+  \renewcommand*\l@subsubsection{\@horizontaltocline{3}{3.8em}{3.2em}}
+  \renewcommand*\l@paragraph{\@horizontaltocline{4}{7.0em}{4.1em}}
+  \renewcommand*\l@subparagraph{\@horizontaltocline{5}{10em}{5em}}
+  \renewcommand{\l@section}[2]{
+    \ifnum \c@tocdepth >\m@ne
+      \par
+      \addpenalty{-\@highpenalty}\vskip 1.0em \@plus\p@\setlength\@tempdima{1.5em}
+      \begingroup
+        \ifhorizontaltoc@sansserif\sffamily\fi % Code for the sansserif option.
+        \parindent \z@ \rightskip \@pnumwidth\parfillskip -\@pnumwidth\leavevmode \bfseries\advance\leftskip
+        \@tempdima\hskip -\leftskip#1\nobreak\hfil\nobreak\hb@xt@\@pnumwidth{\hss #2\kern-\p@\kern\p@}
+        \par\penalty\@highpenalty
+      \endgroup
+      \vskip .5em
+    \fi
+  }
+}{
+  \@ifundefined{part}{
+    % Nonstandard classes with chapters but no parts.
+    \renewcommand*\l@subsection{\@horizontaltocline{2}{1.5em}{2.3em}}
+    \renewcommand*\l@subsubsection{\@horizontaltocline{3}{3.8em}{3.2em}}
+    \renewcommand*\l@paragraph{\@horizontaltocline{4}{7.0em}{4.1em}}
+    \renewcommand*\l@subparagraph{\@horizontaltocline{5}{10em}{5em}}
+    \renewcommand{\l@section}[2]{
+      \ifnum \c@tocdepth >\m@ne
+        \par
+        \addpenalty{-\@highpenalty}\vskip 1.0em \@plus\p@\setlength\@tempdima{1.5em}
+        \begingroup
+          \ifhorizontaltoc@sansserif\sffamily\fi % Code for the sansserif option.
+          \parindent \z@ \rightskip \@pnumwidth\parfillskip -\@pnumwidth\leavevmode \bfseries\advance\leftskip
+          \@tempdima\hskip -\leftskip#1\nobreak\hfil\nobreak\hb@xt@\@pnumwidth{\hss #2\kern-\p@\kern\p@}
+          \par\penalty\@highpenalty
+        \endgroup
+        \vskip .5em
+      \fi
+    }
+  }{
+    % Classes with both chapters and parts (e.g. book, report).
+    \renewcommand*\l@section{\@horizontaltocline{1}{1.5em}{2.3em}}
+    \renewcommand*\l@subsection{\@horizontaltocline{2}{3.8em}{3.2em}}
+    \renewcommand*\l@subsubsection{\@horizontaltocline{3}{7.0em}{4.1em}}
+    \renewcommand*\l@paragraph{\@horizontaltocline{4}{10em}{5em}}
+    \renewcommand*\l@subparagraph{\@horizontaltocline{5}{12em}{6em}}
+    \renewcommand{\l@chapter}[2]{
+      \ifnum \c@tocdepth >\m@ne
+        \par
+        \addpenalty{-\@highpenalty}\vskip 1.0em \@plus\p@\setlength\@tempdima{1.5em}
+        \begingroup
+          \ifhorizontaltoc@sansserif\sffamily\fi % Code for the sansserif option.
+          \parindent \z@ \rightskip \@pnumwidth\parfillskip -\@pnumwidth\leavevmode \bfseries\advance\leftskip
+          \@tempdima\hskip -\leftskip#1\nobreak\hfil\nobreak\hb@xt@\@pnumwidth{\hss #2\kern-\p@\kern\p@}
+          \par\penalty\@highpenalty
+        \endgroup
+        \vskip .5em
+      \fi
+    }
+    \renewcommand{\l@part}[2]{
+      \ifnum \c@tocdepth >-2\relax
+        \par
+        \addvspace{2.25em \@plus\p@}\setlength\@tempdima{3em}
+        \begingroup
+          \ifhorizontaltoc@sansserif\sffamily\fi % Code for the sansserif option.
+          \parindent \z@ \rightskip \@pnumwidth\parfillskip -\@pnumwidth{\leavevmode\large \bfseries #1\hfil
+          \hb@xt@\@pnumwidth{\hss #2\kern-\p@\kern\p@}}\par\nobreak\global\@nobreaktrue
+          \everypar{\global\@nobreakfalse\everypar{}}
+        \endgroup
+      \fi
+    }
+  }
+}
+
+\makeatother
+\endinput
